@@ -8,48 +8,76 @@
 </head>
 <body>
     <form action="">
-        <label for="NOMBRE">NOMBRE:</label><br>
-        <input type="text" id="usuario" name="NOMBRE" placeholder="escribe tu NOMBRE"><br>
-        <label for="correo">CORREO ELECTRONICO:</label><br>
-        <input type="email" id="correo" name="correo" placeholder="Escribe tu correo"> <br>
-        <label for="clave">Contraseña:</label><br>
-        <input type="password" id="clave" name="clave" required><br>
-        <label for="edad">Edad:</label><BR>
-        <input type="number" id="edad" name="edad" min="0" max="120"><br>
-        <label for="tel">TELEFONO:</label><BR>
-        <input type="tel" id="tel" name="tel" placeholder="+57 300 000 0000"><br>        
-        <input type="date" id="nac" name="nac"><br>
-        <input type="time" id="hora" name="hora"><br>
-        <input type="datetime-local" id="cita" name="cita"><br>
-        <p>Genero:</p>
+        <h2 class="form-title">Formulario de Registro</h2>
+        <hr class="divider"><br>
+
+        <label for="nombre">NOMBRE:</label> <br>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"> <br> <br>
+
+        <label for="correo">CORREO ELECTRONICO:</label> <br>
+        <input type="email" id="correo" name="correo" placeholder="Escribe tu correo"> <br> <br>
+
+        <label for="contra">CONTRASEÑA:</label> <br>
+        <input type="password" id="contrase" name="contrase" placeholder="Escribe tu contraseña"><br><br>
+
+        <label for="edad">EDAD:</label> <br>
+        <input type="number" id="edad" name="edad" min="0" max="120" step="1" placeholder="Escribe tu edad"> <br><br>
+
+        <label for="telefono">TELEFONO:</label> <br>
+        <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu telefono"><br> <br>
+
+        <label for="fecha">FECHA DE NACIMIENTO:</label><br>
+        <input type="date" id="fecha" name="fecha"> <br><br>
+
+        <label for="hora">HORA:</label><br>
+        <input type="time" id="hora" name="hora"> <br><br>
+
+        <p>GENERO:</p>
+
         <input type="radio" id="gen_m" name="genero" value="M">
-        <label for="gen_m">MASCULINO</label><BR>
+        <label for="gen_m">MASCULINO</label><br>
+
         <input type="radio" id="gen_f" name="genero" value="F">
         <label for="gen_f">FEMENINO</label><br>
-        <input type="radio" id="otro" name="genero" value="Ot">
-        <label for="otro">OTRO</label><BR>
-        <p>Hobbies:</p>
+
+        <input type="radio" id="otro" name="otro" value="O">
+        <label for="otro">OTRO</label><br>
+
+        <p>HOBBIES:</p>
+
         <input type="checkbox" id="h_lectura" name="hobby" value="lectura">
-        <label for="h_lectura">Lectura</label><br>
+        <label for="h_lectura">LECTURA</label><br>
+
         <input type="checkbox" id="h_deporte" name="hobby" value="deporte">
-        <label for="h_deporte">Deporte</label><br>
+        <label for="h_deporte">DEPORTE</label><br>
+
         <input type="checkbox" id="h_musica" name="hobby" value="musica">
-        <label for="h_musica">Música</label><br><br>
-        <label for="pais">País:</label><br>
-        <select id="pais" name="pais">
-        <option value="co" selected>Colombia</option>
-        <option value="mx">México</option>
-        <option value="ar">Argentina</option>
+        <label for="h_musica">MUSICA</label><br>
+
+        <input type="checkbox" id="h_netflix" name="hobby" value="netflix">
+        <label for="h_netflix">NETFLIX</label><br>
+
+        <input type="checkbox" id="h_culinaria" name="hobby" value="culinaria">
+        <label for="h_culinaria">CULINARIA</label><br><br>
+        
+        <label for="pais">PAIS:</label> <br><br>
+        <select name="pais" id="pais">
+            <option value="co">COLOMBIA</option>
+            <option value="mx">MEXICO</option>
+            <option value="ar">ARGENTINA</option>
+            <option value="ch">CHILE</option>
+            <option value="po">PORTUGAL</option>
+            <option value="o">OTRO</option>
         </select><br><br>
-        <label for="msg">Mensaje:</label><br>
-        <textarea id="msg" name="mensaje" rows="4" cols="30" placeholder="Escribe tu mensaje"></textarea><br><br>
-        <label for="cv">Hoja de vida (PDF):</label><br>
-        <input type="file" id="cv" name="cv" accept="application/pdf"><br><br>
+
+        <label for="msg">MENSAJE:</label><br>
+        <textarea name="mensaje" id="msg" rows="4" cols="30" placeholder="Escribe tu comentario"></textarea><br><br>
+
+        <label for="cv">HOJA DE VIDA:</label><br><br>
+        <input type="file" id="cv" name="cv" accept="application/pdf"><br><br><br>
+
         <input type="submit" value="Enviar">
-        <input type="reset" value="Limpiar"> <!-- opcional, reinicia el formulario -->
-        </select>
-
-
+        <input type="reset" value="limpiar">
     </form>
 </body>
 </html>
