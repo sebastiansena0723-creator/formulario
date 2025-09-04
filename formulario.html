@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="NOMBRE">NOMBRE:</label><br>
+        <input type="text" id="usuario" name="NOMBRE" placeholder="escribe tu NOMBRE"><br>
+        <label for="correo">CORREO ELECTRONICO:</label><br>
+        <input type="email" id="correo" name="correo" placeholder="Escribe tu correo"> <br>
+        <label for="clave">Contraseña:</label><br>
+        <input type="password" id="clave" name="clave" required><br>
+        <label for="edad">Edad:</label><BR>
+        <input type="number" id="edad" name="edad" min="0" max="120"><br>
+        <label for="tel">TELEFONO:</label><BR>
+        <input type="tel" id="tel" name="tel" placeholder="+57 300 000 0000"><br>        
+        <input type="date" id="nac" name="nac"><br>
+        <input type="time" id="hora" name="hora"><br>
+        <input type="datetime-local" id="cita" name="cita"><br>
+        <p>Genero:</p>
+        <input type="radio" id="gen_m" name="genero" value="M">
+        <label for="gen_m">MASCULINO</label><BR>
+        <input type="radio" id="gen_f" name="genero" value="F">
+        <label for="gen_f">FEMENINO</label><br>
+        <input type="radio" id="otro" name="genero" value="Ot">
+        <label for="otro">OTRO</label><BR>
+        <p>Hobbies:</p>
+        <input type="checkbox" id="h_lectura" name="hobby" value="lectura">
+        <label for="h_lectura">Lectura</label><br>
+        <input type="checkbox" id="h_deporte" name="hobby" value="deporte">
+        <label for="h_deporte">Deporte</label><br>
+        <input type="checkbox" id="h_musica" name="hobby" value="musica">
+        <label for="h_musica">Música</label><br><br>
+        <label for="pais">País:</label><br>
+        <select id="pais" name="pais">
+        <option value="co" selected>Colombia</option>
+        <option value="mx">México</option>
+        <option value="ar">Argentina</option>
+        </select><br><br>
+        <label for="msg">Mensaje:</label><br>
+        <textarea id="msg" name="mensaje" rows="4" cols="30" placeholder="Escribe tu mensaje"></textarea><br><br>
+        <label for="cv">Hoja de vida (PDF):</label><br>
+        <input type="file" id="cv" name="cv" accept="application/pdf"><br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar"> <!-- opcional, reinicia el formulario -->
+        </select>
+
+
+    </form>
+</body>
+</html>
